@@ -13,7 +13,7 @@
 
 var counterContainer = document.querySelector(".website-counter");
 async function updateCounter() {
-  let response = await fetch("https://t0luu1qr14.execute-api.us-east-1.amazonaws.com/dev/crc");
+  let response = await fetch("https://jbdmig890f.execute-api.us-east-1.amazonaws.com/dev/crc");
   let data = await response.json();
   counterContainer.innerHTML = `${data}`;
 }
