@@ -37,7 +37,7 @@ pipeline {
                 }    
             }
         }
-        stage('Plan') {
+        stage('Plan backend tf') {
             steps {
                 script {
                     dir('back-end') {
@@ -85,7 +85,7 @@ pipeline {
                 }    
             }
         }
-        stage('Plan') {
+        stage('Plan frontend tf') {
             steps {
                 script {
                     dir('front-end') {
