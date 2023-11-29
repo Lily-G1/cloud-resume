@@ -102,7 +102,7 @@ pipeline {
                     dir('front-end') {
                         if (params.action == 'apply') {
                             if (!params.autoApprove) {
-                                def plan2 = readFile 'tfplan_frontend.txt'
+                                def plan = readFile 'tfplan_frontend.txt'
                                 input message: "Do you want to apply the plan?",
                                 parameters: [text(name: 'Plan', description: 'Please review the plan', defaultValue: plan)]
                             }
