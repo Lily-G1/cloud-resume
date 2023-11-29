@@ -18,7 +18,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Lily-G1/cloud-resume.git'
             }
         }
-        stage('create backend state bucket') {
+        stage('Create backend state bucket') {
             steps {
                 script {
                     dir('back-end/s3_bucket_state') {
@@ -66,7 +66,7 @@ pipeline {
                 }
             }
         }
-        stage('create frontend state bucket') {
+        stage('Create frontend state bucket') {
             steps {
                 script {
                     dir('front-end/s3_bucket_state') {
