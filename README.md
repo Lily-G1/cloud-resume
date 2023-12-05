@@ -1,6 +1,6 @@
-# cloud-resume
+# cloud-resume  
 
-My attempt of the infamous Cloud Resume Project where i host a static HTML/CSS/JS application using AWS serverless cloud infrastructure. The entire project is split into frontend & backend.  
+My attempt at the infamous **Cloud Resume Project** where i host a static HTML/CSS/JS application using AWS serverless cloud infrastructure. The entire project is split into frontend & backend.  
 The frontend consists of the web application files hosted on an S3 bucket, with content delivery by Cloudfront and SSL with Certificate Manager.  
 The backend consists of a Lambda function that displays the app's visitor count on the web page and stores same in a DynamoDB table. An API Gateway is included to provide a http URL that triggers the Lambda function.  
 All these are provisioned using Terraform IAC and a Jenkins declarative pipeline is used for continous integration & delivery. Whenever new code is commited to this repo, the pipeline is auto triggered and deployed.  
