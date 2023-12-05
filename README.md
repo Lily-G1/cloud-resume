@@ -1,5 +1,7 @@
 # cloud-resume  
 
+![CRC drawio](https://github.com/Lily-G1/cloud-resume/assets/104821662/b83d7a25-a099-4cd2-9fa3-65775d7c84bc)  
+
 My attempt at the infamous **Cloud Resume Project** where i host a static HTML/CSS/JS application using AWS serverless cloud infrastructure. The entire project is split into frontend & backend.  
 The frontend consists of the web application files hosted on an S3 bucket, with content delivery by Cloudfront and SSL with Certificate Manager.  
 The backend consists of a Lambda function that displays the app's visitor count on the web page and stores same in a DynamoDB table. An API Gateway is included to provide a http URL that triggers the Lambda function.  
